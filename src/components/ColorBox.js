@@ -7,10 +7,10 @@ import "./ColorBox.css";
 
 const styles = {
   copyText: {
-    color: props => chroma(props.background).luminance() >= 0.7 ? "black" : "white"
+    color: props => chroma(props.background).luminance() >= 0.7 ? "rgba(0, 0, 0, 0.5)" : "white"
   },
   colorName: {
-    color: props => chroma(props.background).luminance() <= 0.08 ? "white" : "black"
+    color: props => chroma(props.background).luminance() <= 0.08 ? "white" : "rgba(0, 0, 0, 0.5)"
   }
 }
 
@@ -35,7 +35,7 @@ class ColorBox extends React.Component {
   render() {
     const { name, background, moreUrl, showLink, classes } = this.props;
     const { copied } = this.state;
-    
+
     return (
       <CopyToClipboard text={background} onCopy={this.changeCopyState}>
         <div style={{ background: background }} className="ColorBox">
