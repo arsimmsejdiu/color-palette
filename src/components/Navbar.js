@@ -32,7 +32,7 @@ class Navbar extends Component {
     return (
       <header className="Navbar">
         <div className="logo">
-          <Link to="/">coloryard</Link>
+          <Link to="/">oceancolor</Link>
         </div>
         {showingAllColors && (
           <div className="slider-container">
