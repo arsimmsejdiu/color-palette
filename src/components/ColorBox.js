@@ -7,12 +7,34 @@ import "./ColorBox.css";
 
 const styles = {
   copyText: {
-    color: props => chroma(props.background).luminance() >= 0.7 ? "rgba(0, 0, 0, 0.5)" : "white"
+    color: (props) =>
+      chroma(props.background).luminance() >= 0.7
+        ? "rgba(0, 0, 0, 0.5)"
+        : "white",
   },
   colorName: {
-    color: props => chroma(props.background).luminance() <= 0.08 ? "white" : "rgba(0, 0, 0, 0.5)"
-  }
-}
+    color: (props) =>
+      chroma(props.background).luminance() <= 0.08
+        ? "white"
+        : "rgba(0, 0, 0, 0.5)",
+  },
+  seeMore: {
+    color: (props) =>
+      chroma(props.background).luminance() >= 0.7
+        ? "rgba(0, 0, 0, 0.5)"
+        : "white",
+    background: "rgba(255, 255, 255, 0.3)",
+    position: "absolute",
+    border: "none",
+    right: "0",
+    bottom: "0",
+    width: "60px",
+    height: "30px",
+    textAlign: "center",
+    lineHeight: "30px",
+    textTransform: "uppercase",
+  },
+};
 
 class ColorBox extends React.Component {
   constructor(props) {
@@ -49,15 +71,13 @@ class ColorBox extends React.Component {
           </div>
           <div className="copy-container">
             <div className="box-content">
-              <span className={classes.colorName}>
-                {name}
-              </span>
+              <span className={classes.colorName}>{name}</span>
             </div>
             <button className={`copy-button ${classes.copyText}`}>Copy</button>
           </div>
           {showLink && (
             <Link to={moreUrl} onClick={(e) => e.stopPropagation()}>
-              <span className={`see-more ${classes.copyText}`}>MORE</span>
+              <span className={classes.seeMore}>MORE</span>
             </Link>
           )}
         </div>
