@@ -3,6 +3,7 @@ import MiniPalette from "./MiniPalette";
 import { withStyles } from "@material-ui/styles";
 import styles from "../styles/PaletteList.styles";
 import { Link } from "react-router-dom";
+import wave from '../styles/wave.svg';
 class PaletteList extends Component {
   goToPalette = (id) => {
     this.props.history.push(`/palette/${id}`);
@@ -13,7 +14,9 @@ class PaletteList extends Component {
       <div className={classes.root}>
         <div className={classes.container}>
           <nav className={classes.nav}>
-            <h1>Ocean Colors</h1>
+            <h1>Ocean 
+              <img src={wave} alt="wave"/>
+              Colors</h1>
             <Link to="/palette/new">Create Palette</Link>
           </nav>
           <div className={classes.palettes}>

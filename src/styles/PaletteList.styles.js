@@ -22,14 +22,29 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     color: "white",
+    "& img": {
+      width: "30px",
+      height: "30px",
+      padding: "5px",
+      transition: "all 0.3s ease-in-out",
+      "&:hover": {
+        transform: "scale(1.2)",
+      },
+    },
     "& a": {
       transition: "all 0.4s ease-in-out",
+      fontWeight: "500",
+      backgroundColor: "transparent",
+      borderRadius: "10px",
+      border: "3px solid white",
       color: "white",
-      padding: "10px",
+      padding: "8px",
+      textDecoration: "none",
       "&:hover": {
         backgroundColor: "white",
         color: "black",
         borderRadius: "10px",
+        transform: "scale(1.06)",
       }
     }
   },
