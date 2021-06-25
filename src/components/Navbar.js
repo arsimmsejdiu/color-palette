@@ -6,12 +6,10 @@ import Snackbar from "@material-ui/core/Snackbar";
 import CloseIcon from "@material-ui/icons/Close";
 import IconButton from "@material-ui/core/IconButton";
 import { withStyles } from "@material-ui/styles";
-import styles from '../styles/Navbar.styles';
-
 import Slider from "rc-slider";
-import "rc-slider/assets/index.css";
-import "./Navbar.css";
 
+import "rc-slider/assets/index.css";
+import styles from '../styles/Navbar.styles';
 class Navbar extends Component {
   state = {
     format: "hex",
