@@ -1,6 +1,9 @@
+import bg from './bg.svg';
+
 const styles = {
   root: {
-    backgroundColor: "lightblue",
+    backgroundColor: "#394bad",
+    backgroundImage: `url(${bg})`,
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
