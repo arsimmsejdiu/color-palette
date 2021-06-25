@@ -8,14 +8,14 @@ import "./ColorBox.css";
 const styles = {
   ColorBox: {
     width: "20%",
-    height: (props) => (props.showingFullPalette ? "25%" : "50%"),
+    height: props => (props.showingFullPalette ? "25%" : "50%"),
     margin: "0 auto",
     display: "inline-block",
     position: "relative",
     cursor: "pointer",
     marginBottom: "-4px",
     "&:hover button": {
-      opacity: "1",
+      opacity: 1
     },
   },
   copyText: {
@@ -179,7 +179,7 @@ class ColorBox extends React.Component {
             <button className={classes.copyButton}>Copy</button>
           </div>
           {showingFullPalette && (
-            <Link to={moreUrl} onClick={(e) => e.stopPropagation()}>
+            <Link to={moreUrl} onClick={e => e.stopPropagation()}>
               <span className={classes.seeMore}>MORE</span>
             </Link>
           )}

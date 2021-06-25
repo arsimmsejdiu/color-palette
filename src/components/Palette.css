@@ -1,4 +1,4 @@
-.Palette {
+/* .Palette {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,9 +6,9 @@
 
 .palette-colors {
   height: 90%;
-}
+} */
 
-.Palette-footer {
+/* .Palette-footer {
   background-color: white;
   height: 5vh;
   display: flex;
@@ -22,7 +22,4 @@
   margin-top: -8px;
   padding: 0 0.4rem;
   font-size: 1.5rem;
-}
-
-
-
+} */
