@@ -20,7 +20,18 @@ const styles = {
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
+    alignItems: "center",
     color: "white",
+    "& a": {
+      transition: "all 0.4s ease-in-out",
+      color: "white",
+      padding: "10px",
+      "&:hover": {
+        backgroundColor: "white",
+        color: "black",
+        borderRadius: "10px",
+      }
+    }
   },
   palettes: {
     boxSizing: "border-box",

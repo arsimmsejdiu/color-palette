@@ -6,9 +6,12 @@ const styles = {
     padding: "0.5rem",
     position: "relative",
     overflow: "hidden",
+    transition: "all 0.3s ease-in-out",
     "&:hover": {
+      transform: "scale(1.06)",
       cursor: "pointer",
-    },
+      backgroundColor: "lightblue",
+    }
   },
   colors: {
     backgroundColor: "#dae1e4",

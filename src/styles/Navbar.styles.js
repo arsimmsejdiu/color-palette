@@ -14,9 +14,16 @@ const styles = {
     height: "100%",
     display: "flex",
     alignItems: "center",
+    "&:hover": {
+      backgroundColor: "lightblue",
+    },
     "& a": {
       textDecoration: "none",
       color: "black",
+      transition: "all 0.3s ease-in-out",
+      "&:hover": {
+        transform: "scale(1.06)",
+      },
     },
   },
   slider: {
@@ -26,19 +33,20 @@ const styles = {
     "& .rc-slider-rail": {
       height: "8px",
     },
-    "& .rc-slider-handle,.rc-slider-handle:active,.rc-slider-handle:hover,.rc-slider-handle:focus": {
-      backgroundColor: "green",
-      outline: "none",
-      border: "2px solid green",
-      boxShadow: "none",
-      width: 13,
-      height: 13,
-      marginLeft: "-7px",
-      marginTop: "-3px",
-    },
+    "& .rc-slider-handle,.rc-slider-handle:active,.rc-slider-handle:hover,.rc-slider-handle:focus":
+      {
+        backgroundColor: "green",
+        outline: "none",
+        border: "2px solid green",
+        boxShadow: "none",
+        width: 13,
+        height: 13,
+        marginLeft: "-7px",
+        marginTop: "-3px",
+      },
     "& .rc-slider-track": {
-      backgroundColor: 'transparent',
-    }
+      backgroundColor: "transparent",
+    },
   },
   selectContainer: {
     marginLeft: "auto",
