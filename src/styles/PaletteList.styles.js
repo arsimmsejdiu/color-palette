@@ -1,4 +1,4 @@
-import bg from './bg.svg';
+import bg from "./bg.svg";
 
 const styles = {
   root: {
@@ -45,8 +45,8 @@ const styles = {
         color: "black",
         borderRadius: "10px",
         transform: "scale(1.06)",
-      }
-    }
+      },
+    },
   },
   palettes: {
     boxSizing: "border-box",
