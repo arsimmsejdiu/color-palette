@@ -14,7 +14,7 @@ const styles = {
     display: "inline-block",
     position: "relative",
     cursor: "pointer",
-    marginBottom: "-4px",
+    marginBottom: "-6px",
     opacity: "1",
     backgroundColor: "black",
     "& a": {
