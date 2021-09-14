@@ -5,7 +5,6 @@ const styles = {
     borderRadius: "5px",
     padding: "0.5rem",
     position: "relative",
-    overflow: "hidden",
     transition: "all 0.3s ease-in-out",
     "&:hover": {
       transform: "scale(1.06)",
@@ -40,7 +39,7 @@ const styles = {
     display: "inline-block",
     margin: "0 auto",
     position: "relative",
-    marginBottom: "-6px",
+    marginBottom: "-4px",
   },
 };
 
